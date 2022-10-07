@@ -1,43 +1,58 @@
 body{ background: url('../photo/pink.jpg') right/cover no-repeat; 
-    background-size: 100%;
+    background-size: auto;
 }
 
 p{
-    color:#fff;
+    color:#000;
     font-size: 16px;
     font-weight: normal;
-    letter-spacing: 1px;
+    position: relative;
+    left: 750px;
 }
 h1{
     color: #5c9fc9;
     font-weight: bold;
-    font-size: 45px;
-    font-family: 'Lucida Console', Courier, monospace;
+    font-size: 50px;
+    padding-left: 30px;
 }
 h2{
-    color: #939191;
+    color: #000;
     font-size: 22px;
     font-weight: bold;
+    padding-left: 30px;
 }
-.active, .active ~ a{
-    color: rgb(52, 152, 56);
-    text-decoration: underline;
-    padding: 15px;
-    font-size: 20px;
-}
-a:hover{background-color: #87CEFA; font-weight: bold}
-body > select {color: #000;background-color: #fff}
-.block1,.block2,.block3{
-    background-color: #ede83e;
-    box-sizing: content-box;
-    width: 75px; 
-    height: 70px;
-    padding:50px;
-    margin: 30px;
-    border-style: solid;
-    border-radius: 50%;
-    text-align:center;
+.navbar-menu li{
     display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    margin-top: 14px;
+    padding-right: 15px;
+    position: relative;
 }
-.block2{background-color: #d581e6d5;}
-.block3{background-color: rgb(144, 207, 93);}
+a:hover{background-color: #dadfdf;padding: 12px;border-radius: 1000px; font-weight: bold}
+body > select {color: #000;background-color: #fff}
+.location{
+    margin-left: 30px;
+    font-size: 14px;
+}
+.block1, .block2, .block3 {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 250px;
+    height: 230px;
+    margin: 30px;
+}
+.img {    
+    padding-top: 30px;
+    padding-left: 30px;
+    display: inline-block;
+
+    
+}
+.caption {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 85px;
+}
+
+

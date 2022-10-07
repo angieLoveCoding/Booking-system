@@ -3,30 +3,64 @@
         <br>
         <title>Online Booking</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
-<body> 
-    <h1>Online room booking</h1>
-    <header>
-        <nav>
-            <a href="https://visionrcl.org.uk/" class="active">home</a>
-            <a href="https://visionrcl.org.uk/">about</a>
-            <a href="https://visionrcl.org.uk/">booking</a>
-            <a href="https://visionrcl.org.uk/">contact</a>
-        </nav>
-    </header>
-    <h2>Room booking</h2>
-    <h3>Search</h3>
-    <select>
-        <option>Room M1</option>
-        <option>Room M2</option>
-        <option>Room M3</option>
-    </select>
-    <p>user name</p>
-</div>
-<div class="block1">Room M1</div>
-<div class="block2">Room M2</div>
-<div class="block3">Room M3</div>
-</body>
+    <body> 
+        <link rel="stylesheet" href="css/style.css">
+        <p id="greeting">Good Evening!</p>
+            <script>
+                const hour = new Date().getHours();
+                var greeting
+                if(hour < 12) {
+                greeting = "Good Morning!";
+                } else if (hour > 12) {
+                greeting = "Good Afternoon!"}
+                else{greeting = "Good Evening!"}
+
+                document.getElementById("greeting").innerHTML=greeting;
+            </script>
+        <h1>Online Booking</h1>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">YogaWithMe</a>
+                </div>
+                <div class="navbar-menu">
+                    <ul class="menu">
+                        <li><a href="file:///Users/yuentungcheng/Documents/HTML/Booking%20system/online%20booking.html">Home</a></li>
+                        <li><a href="#">Make a Booking</a></li>
+                        <li><a href="#">Manage Bookings</a></li>
+                        <li><a href="#">Basket</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <h2>Select Location</h2>
+        <select class="location">
+            <option>Hyde Park</option>
+            <option>Regents Park</option>
+            <option>Bushy Park</option>
+        </select><br>
+        <div class="block1">
+            <img src="photo/HYDEPARK.jpeg" width="250px"height="180">
+            <span class="caption">Hyde Park</span>
+        </div> 
+        <div class="block2">
+            <img src="photo/RegentsPark.jpeg" width="250"height="180">
+            <span class="caption">Regents Park</span>
+        </div> 
+        <div class="block3">
+            <img src="photo/BushyPark.jpeg" width="250" height="180">
+            <span class="caption">Bushy Park</span>
+        </div> 
+<!--
+    <div><img src="photo/HYDEPARK.jpeg" width="300" class="block1">Hyde Park</div>
+    <div><img src="photo/RegentsPark.jpeg" width="200" class="block2">Regents Park</div>
+    <div><img src="photo/BushyPark.jpeg" width="200"class="block3">Bushy Park</div> 
+box-sizing: content-box;
+vertical-align: baseline;
+-->
+    </body>
 </html>
      <!--my notes-->
      
